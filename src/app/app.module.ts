@@ -3,10 +3,11 @@ import { NgModule } from "@angular/core";
 import { HttpModule } from "@angular/http";
 
 // Rutas
-import {app_routing} from "./app.rutas";
+import { app_routing } from "./app.rutas";
 
 // Servicios
-import {InformacionService} from "./services/informacion.service";
+import { InformacionService } from "./services/informacion.service";
+import { ProductosService } from "./services/productos.service";
 
 // Componentes
 import { AppComponent } from "./app.component";
@@ -32,7 +33,8 @@ import { ItemComponent } from "./components/item/item.component";
 
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })

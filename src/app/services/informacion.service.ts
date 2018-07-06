@@ -25,7 +25,7 @@ export class InformacionService {
    public carga_sobre_nosotros() {
 
     this.http.get("https://webangular-47141.firebaseio.com/equipo.json").subscribe(data => {
-      console.log(data.json());
+      // console.log(data.json());
       this.cargada_sobre_nosotros = true;
       this.equipo = data.json();
     });
