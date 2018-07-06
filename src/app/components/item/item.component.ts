@@ -24,7 +24,7 @@ export class ItemComponent {
 
          this.codigo = parametros["id"];
          this.producto = res.json();
-          console.log( this.producto );
+        // console.log( this.producto );
 
       });
     });
